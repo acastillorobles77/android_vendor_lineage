@@ -211,6 +211,9 @@ PRODUCT_PACKAGES += \
     NetworkStackOverlay \
     TrebuchetOverlay
 
+# GApps
+$(call inherit-product, vendor/gms/products/gms.mk)
+
 # Translations
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/crowdin/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
